@@ -73,7 +73,7 @@ int main()
 		
 		if(choice == 1)
 		{
-			newAddressBook.displayEntry();
+			newAddressBook.displayAdress();
 		}
 		else if(choice == 2)
 		{
