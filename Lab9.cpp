@@ -56,3 +56,40 @@ public:
 	void changeEntry();
 	void removeEntry();
 };
+
+int main()
+{
+	int choice = 0;
+	addressBook newAddressBook;
+
+	do
+	{
+		newAddressBook.displayMenu();
+		cout << "Enter your choice(1-6): ";
+		while(choice > 6 || choice < 0)
+		{
+			cout << "Please select a number between 1 and 6: ";
+			cin >> choice;
+		}
+		if(choice == 1)
+		{
+			newAddressBook.displayAddress();
+		}
+		else if(choice == 2)
+		{
+			newAddressBook.addEntry();
+		}
+		else if(choice == 3)
+		{
+			newAddressBook.removeEntry();
+		}
+		else if(choice == 4)
+		{
+			newAddressBook.changeEntry();
+		}
+		else if(choice == 5)
+		{
+			newAddressBook.displayAddressBook();
+		}
+	}while(choice != 6);
+}
