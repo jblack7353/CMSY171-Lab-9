@@ -25,17 +25,17 @@ class addressBook
 		
 		void setStreetAddress(string index, string address)
 		{
-			addressMap[index].addressEntry.streetAddress = address;
+			addressMap[index].streetAddress = address;
 		}
 		
 		void setState(string index, string newState)
 		{
-			addressMap[index].addressEntry.state = newState;
+			addressMap[index].state = newState;
 		}
 		
 		void setZipCode(string index, int newZip)
 		{
-			addressMap[index].addressEntry.zipCode = newZip;
+			addressMap[index].zipCode = newZip;
 		}
 		
 		void displayMenu()
@@ -73,7 +73,7 @@ int main()
 		
 		if(choice == 1)
 		{
-			newAddressBook.displayAdress();
+			newAddressBook.displayAddress();
 		}
 		else if(choice == 2)
 		{
